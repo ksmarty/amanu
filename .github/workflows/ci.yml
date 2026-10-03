@@ -5,6 +5,9 @@ on:
     branches: [master]
   pull_request:
     branches: [master]
+  # Manual runs, so a branch can be built on demand instead of waiting for a
+  # pull_request run to be approved.
+  workflow_dispatch:
 
 permissions:
   contents: read
